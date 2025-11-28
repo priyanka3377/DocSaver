@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDetails"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_details_activity"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/loadPic"
+            android:src="@drawable/ic_user"
+            app:civ_border_color="@color/lavender"
+            app:civ_border_width="2dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadName"
+            android:hint="@string/enter_name"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:autofillHints="name"
+            android:ems="12"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/custom_edit_text"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadDob"
+            android:hint="@string/enter_dob"
+            android:textSize="20sp"
+            android:ems="12"
+            android:padding="10dp"
+            android:focusable="false"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_edit_text"/>
+
+        <TextView
+            android:id="@+id/loadDobError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            android:layout_marginStart="40dp"
+            android:visibility="gone"
+            android:text="@string/dob_text" />
+
+
+        <Spinner
+            android:id="@+id/loadGender"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/select_gender"
+            android:background="@drawable/custom_edit_text"
+            android:dropDownVerticalOffset="8dp"
+            android:padding="10dp"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="false"
+                app:ccp_showNameCode="false"
+                app:ccp_defaultNameCode="IN"
+                app:ccp_showPhoneCode="true"
+                android:layout_marginEnd="8dp"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loadPhone"
+                android:hint="@string/enter_no"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:autofillHints="phone"
+                android:ems="11"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit_text"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveLoadedDetails"
+            android:ems="12"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/update_details_btn"
+            android:backgroundTint="@color/lavender"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

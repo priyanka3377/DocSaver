@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MpinPage"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enter4pin"
+        android:text="@string/set_pin"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/edtpin"
+        android:ems="12"
+        android:padding="10dp"
+        android:hint="@string/enter_pin"
+        android:inputType="numberPassword"
+        android:autofillHints="password"
+        android:maxLength="4"
+        android:textSize="20sp"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_action_name"
+        android:background="@drawable/custom_edit_text"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/edtconfirmpin"
+        android:ems="12"
+        android:padding="10dp"
+        android:inputType="numberPassword"
+        android:autofillHints="password"
+        android:hint="@string/re_enter_mpin"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:maxLength="4"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/ic_action_name"
+        android:background="@drawable/custom_edit_text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setpin"
+            android:text="@string/set_pin_btn"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:ems="9"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/lavender"/>
+
+    </LinearLayout>
+
+</LinearLayout>

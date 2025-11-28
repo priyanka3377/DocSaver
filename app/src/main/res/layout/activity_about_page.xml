@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:padding="10dp"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- App name + tagline -->
+            <TextView
+                android:id="@+id/tvAppName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/lavender"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:paddingTop="6dp"
+                android:paddingBottom="2dp" />
+
+            <TextView
+                android:id="@+id/tvTagline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tag_line"
+                android:textSize="20sp"
+                android:textColor="#666666"
+                android:paddingBottom="16dp" />
+
+            <!-- What it does -->
+            <TextView
+                android:id="@+id/tvHeaderWhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/docsaver_does"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvWhat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/docsaver_text"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="12dp"/>
+
+            <!-- Features -->
+            <TextView
+                android:id="@+id/tvHeaderFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/features"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvFeatures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/features_text"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="2dp"
+                android:paddingBottom="12dp"/>
+
+            <!-- Privacy -->
+            <TextView
+                android:id="@+id/tvHeaderPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_security"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_security_text"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="12dp"/>
+
+            <!-- Developer -->
+            <TextView
+                android:id="@+id/tvHeaderDev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developer"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvDeveloper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/developed"
+                android:textSize="20sp"
+                android:textColor="#444444"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

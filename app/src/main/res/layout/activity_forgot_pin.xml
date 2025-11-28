@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPin"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pin"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/enterpass"
+            android:hint="@string/enter_pass"
+            android:ems="14"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_action_name"
+            android:drawablePadding="8dp"
+            android:autofillHints="password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/forgotnewpin"
+            android:hint="@string/new_pin"
+            android:ems="14"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_action_name"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="password"
+            android:inputType="numberPassword"
+            android:maxLength="4"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/forgotrenewpin"
+            android:hint="@string/forgot_re_enter_pin"
+            android:ems="14"
+            android:background="@drawable/custom_edit_text"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_action_name"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="password"
+            android:inputType="numberPassword"
+            android:maxLength="4"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetpin"
+            android:text="@string/reset_pin_btn"
+            android:ems="11"
+            android:backgroundTint="@color/lavender"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
